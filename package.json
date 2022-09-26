@@ -1,0 +1,27 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAT Photo App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1emre/PCAT.git"
+  },
+  "keywords": [
+    "photo",
+    "app",
+    "camera"
+  ],
+  "author": "Emre Demirbaş",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1emre/PCAT/issues"
+  },
+  "homepage": "https://github.com/1emre/PCAT#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
