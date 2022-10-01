@@ -8,7 +8,7 @@ const PhotoSchema = new Schema({
   image: String,
   dateCreated: {
     type: Date,
-    default: +new Date().now + 7 * 24 * 60 * 60 * 1000,
+    default: Date.now,
   },
 });
 
