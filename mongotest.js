@@ -8,15 +8,18 @@ const Schema = mongoose.Schema;
 // });
 
 //connect DB
-mongoose.connect('mongodb+srv://dpedemirbas:admin@mongode.b9b53vk.mongodb.net/pcat-test-db?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(
+  'mongodb+srv://dpedemirbas:admin@mongode.b9b53vk.mongodb.net/pcat-test-db?retryWrites=true&w=majority',
+  { useNewUrlParser: true, useUnifiedTopology: true }
+);
 
 //create Schema
 const PhotoSchema = new Schema({
-    title: String,
-    description: String  
+  title: String,
+  description: String,
 });
 
-const Photo = mongoose.model('Photo',PhotoSchema);
+const Photo = mongoose.model('Photo', PhotoSchema);
 
 //crete a photo
 // Photo.create({
@@ -52,6 +55,6 @@ const Photo = mongoose.model('Photo',PhotoSchema);
 //delete photo
 const id = '6332b366a69a6c602c4efc10';
 
-Photo.findByIdAndDelete(id,(err,data) => {
-    console.log('Photo is removed...');
+Photo.findByIdAndDelete(id, (err, data) => {
+  console.log('Photo is removed...');
 });
